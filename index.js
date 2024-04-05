@@ -25,7 +25,7 @@ app.post('/api/shorturl', function(req, res) {
   const foundIndex = originalUrls.indexOf(url)
 
   if(!url.includes("https://") && !url.includes("http://")){
-    return res.json({ error : "invalide url"})
+    return res.json({ error : "invalid url"})
   }
 
   if (foundIndex < 0){
